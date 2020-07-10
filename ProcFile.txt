@@ -1,0 +1,1 @@
+web gunicorn LoanData_app:app
