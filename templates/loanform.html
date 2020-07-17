@@ -84,5 +84,16 @@
       <br />
   <button type="submit">Get Prediction</button>
     </form>
+    
+    <div, class="results">
+      {% if prediction == 1%}
+      <hS style = "color:#ef5757;text-align: center;">Result: Spam</h2>
+      {% elif prediction == 0%}
+      <hS style = "color:#4bb54b;text-align: center;">Result: Not Spam</h2>
+      { % endif %}
+      
+    </div>
+    
+      
   </body>
 </html>
