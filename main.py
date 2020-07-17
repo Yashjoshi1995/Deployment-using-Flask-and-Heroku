@@ -90,11 +90,11 @@ def predict():
     
     pred = model.predict([input_variables])
     
-    return render_template("loanform.html", prediction = pred)
-#     if pred == 0:
-#         return("Sorry! You are not eligible for loan")
-#     else:
-#         return("Great! You are eligible for loan")
+#     return render_template("loanform.html", prediction = pred)
+    if pred == 0:
+        return("Sorry! You are not eligible for loan")
+    else:
+        return("Great! You are eligible for loan")
     
             
 if __name__ == '__main__':
