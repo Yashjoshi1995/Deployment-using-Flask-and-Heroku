@@ -21,7 +21,7 @@ model = pickle.load(open('RF1','rb'))
 def getModel():
     return(render_template('loanform1.html')) # to create HTML file
     
-@app.route('/prediction', methods = ["POST"])
+@app.route('./prediction', methods = ["POST"])
 # As soon as Get Prediction is clicked, the form action will bring to /prediction url and this function gets executed
 def predict():
     data=pd.read_csv("Loan_data.csv")
