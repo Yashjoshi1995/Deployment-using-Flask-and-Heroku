@@ -51,9 +51,9 @@ def predict():
         
     input_variables.append(dependents)
     
-    if education == 'graduate':
+    if education == 'yes':
         education = 0
-    elif education == 'not graduate':
+    elif education == 'no':
         education = 1
     
     input_variables.append(education)
